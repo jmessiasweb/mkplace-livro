@@ -1,10 +1,7 @@
 package br.com.mercadolivro.model
 
-import javax.persistence.Column
-import javax.persistence.Entity
-import javax.persistence.GeneratedValue
-import javax.persistence.GenerationType
-import javax.persistence.Id
+import br.com.mercadolivro.enums.CustomeStatus
+import javax.persistence.*
 
 @Entity(name = "customer")
 data class CustomerModel (
@@ -14,5 +11,9 @@ data class CustomerModel (
     @Column
     var name: String,
     @Column
-    var email: String
+    var email: String,
+
+    @Column
+    @Enumerated(EnumType.STRING)
+    var status: CustomeStatus
 )

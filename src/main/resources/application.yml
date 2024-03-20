@@ -1,34 +1,14 @@
 server:
   port: 8081
 spring:
-  datasources:
-    default:
-      url: jdbc:postgresql://localhost:5432/mercadolivro
-      driverClassName: org.postgresql.Driver
-      username: postgres
-      password: 1234
-      schema-generate: none
-      dialect: POSTGRES
   jpa:
-    open-in-view: false
-    flyway:
-    baselineOnMigrate: true
-    default.properties.hibernate.hbm2ddl.auto: none
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/mercadolivro?createDatabaseIfNotExist=true
+    username: root
+    password: admin
 
-#  datasource:
-#    driver-class-name: org.postgresql.Driver
-#    url: jdbc:postgresql://localhost:5432/mercadolivro
-#    username: postgres
-#    password: 1234
-#  jpa:
-#    open-in-view: false
-#    generate-ddl: true
-#    properties:
-#      hibernate:
-#        ddl-auto: none
-#        dialect: org.hibernate.dialect.PostgreSQLDialect
-#    flyway:
-#      baselineOnMigrate: true
 
 
 
