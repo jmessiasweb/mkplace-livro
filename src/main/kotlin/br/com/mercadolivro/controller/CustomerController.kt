@@ -2,8 +2,9 @@ package br.com.mercadolivro.controller
 
 import br.com.mercadolivro.controller.request.PostCustomerRequest
 import br.com.mercadolivro.controller.request.PutCustomerRequest
+import br.com.mercadolivro.controller.response.CustomerResponse
 import br.com.mercadolivro.extension.toCustomerModel
-import br.com.mercadolivro.model.CustomerModel
+import br.com.mercadolivro.extension.toCustomerResponse
 import br.com.mercadolivro.service.CustomerService
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
@@ -16,8 +17,8 @@ class CustomerController(
 
 
     @GetMapping
-    fun getAll(@RequestParam name: String?): List<CustomerModel> {
-        return customerService.getAll(name)
+    fun getAll(@RequestParam name: String?): List<CustomerResponse> {
+        return customerService.getAll(name).map { it.toCustomerResponse() }
     }
 
     @PostMapping
@@ -27,8 +28,8 @@ class CustomerController(
     }
 
     @GetMapping("/{id}")
-    fun getCustomer(@PathVariable id: Int): CustomerModel {
-       return customerService.findById(id)
+    fun getCustomer(@PathVariable id: Int): CustomerResponse {
+       return customerService.findById(id).toCustomerResponse()
 
     }
 
