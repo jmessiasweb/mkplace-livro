@@ -29,9 +29,10 @@ dependencies {
 
 	implementation("io.springfox:springfox-swagger2:2.9.2")
 	implementation("io.springfox:springfox-swagger-ui:2.9.2")
-	implementation("org.flywaydb:flyway-core:7.7.0")
 
-//	runtimeOnly("org.postgresql:postgresql")
+	implementation("org.flywaydb:flyway-core:10.10.0")
+
+
 
 	runtimeOnly("mysql:mysql-connector-java")
 	runtimeOnly("com.h2database:h2")
