@@ -15,7 +15,9 @@ fun PostCustomerRequest.toCustomerModel(): CustomerModel {
     return CustomerModel(
         name = this.name,
         email = this.email,
-        status = CustomerStatus.ATIVO)
+        status = CustomerStatus.ATIVO,
+        password = this.password
+    )
 }
 
 fun PutCustomerRequest.toCustomerModel(previusValues: CustomerModel): CustomerModel {
@@ -23,7 +25,9 @@ fun PutCustomerRequest.toCustomerModel(previusValues: CustomerModel): CustomerMo
         id = previusValues.id,
         name = this.name,
         email = this.email,
-        status = previusValues.status)
+        status = previusValues.status,
+        password = previusValues.password
+    )
 }
 
 fun PostBookRequest.toBookModel(customer: CustomerModel): BookModel {
@@ -48,7 +52,7 @@ fun PutBookRequest.toBookModel(previusValues: BookModel): BookModel {
 
 }
 
-fun CustomerModel.toCustomerResponse(): CustomerResponse {
+fun CustomerModel.toResponse(): CustomerResponse {
     return CustomerResponse(
         id = this.id,
         name = this.name,
