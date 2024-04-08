@@ -9,9 +9,8 @@ plugins {
 	jacoco
 }
 
-group = "br.com.mercadolivro"
+group = "com.mercadolivro"
 version = "0.0.1-SNAPSHOT"
-
 java.sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
@@ -36,11 +35,11 @@ dependencies {
 
 
 	runtimeOnly("mysql:mysql-connector-java")
-	runtimeOnly("com.h2database:h2")
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
-	testImplementation("org.springframework.security:spring-security-test:5.7.3")
-	testImplementation("io.mockk:mockk:1.13.2")
+	testImplementation("org.springframework.security:spring-security-test:5.5.2")
+	testImplementation("io.mockk:mockk:1.12.0")
+
 }
 
 tasks.withType<KotlinCompile> {
@@ -53,4 +52,3 @@ tasks.withType<KotlinCompile> {
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
-

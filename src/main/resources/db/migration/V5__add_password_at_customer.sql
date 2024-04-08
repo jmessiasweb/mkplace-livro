@@ -1,1 +1,1 @@
-ALTER TABLE customer ADD COLUMN password VARCHAR(255);
+ALTER TABLE customer ADD COLUMN password varchar(255);
