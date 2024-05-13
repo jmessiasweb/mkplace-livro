@@ -1,0 +1,167 @@
+.menu-principal {
+  width: 100%;
+  background-color: #9ff5a5;
+  height: 60px;
+}
+
+main, .content {
+  margin: 0 auto;
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+.header-1 {    
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  float: left;
+  padding: 0px;
+  /* width: 75%; */
+}
+
+.redes-sociais ul li {
+  margin-left: 2px;
+  display: inline-block;
+  list-style: none;
+  /* float: left; */
+}
+
+.redes-sociais {
+  display: flex;
+  margin-right: 10px;
+}
+
+.coluna-100 {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+
+.header-2 {
+  background-color: #ffffff;
+  width: 980px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.menu ul li {
+  display: inline-block;
+  color: #8b8b8b;
+  margin-left: 30px;
+  height: 25px;
+  padding-bottom: 10px;
+}
+
+
+
+.menu ul li a:hover {
+  color: #00bac6;
+  border-bottom: 3px solid #00bac6;
+}
+
+
+.menu ul li a {
+  color: #8b8b8b;
+  text-decoration: none;    
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.menu {
+  width: 70%;
+  float: left;
+}
+
+.busca {
+  width: 30%;
+  float: right;
+  text-align: center;
+}
+
+.busca input {
+  background-image: url('../img/iconebuscar.jpg');
+  background-repeat: no-repeat;
+  background-position: 96%;
+  border: 1px solid #d6d6d6;
+  height: 15px;
+  margin-top: 11px;
+  padding: 7px;
+  width: 190px;
+  border-radius: 20px;
+}
+
+section.formulario {
+  padding: 80px 4% ;
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.cidades {
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 5px; 
+  padding: 5px; 
+}
+
+.cidades::placeholder {
+  color: black;
+}
+
+form input, form textarea {
+  width: 100%;
+  background-color: #00000032;
+  border: 0;
+  outline: 0;
+  padding: 20px 15px;
+  border-radius: 15px;
+  color: black;
+  font-size: 18px;
+}
+
+form input::placeholder {
+  color: black;
+}
+
+form textarea {
+  resize: none;
+  max-height: 200px;
+}
+
+form .btn-enviar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+form .btn-enviar input {
+  width: 120px;
+  background-color: #209915;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.footer{
+  background-color: black;
+  margin: 0 auto;
+  width: 100%;
+  float: left;
+  position: relative;
+}    
+
+.footer h3 {
+  color:white;
+  text-align: center;
+}
