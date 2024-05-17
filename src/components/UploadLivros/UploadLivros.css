@@ -1,0 +1,107 @@
+.header__principal {
+    width: 100%;
+    background-color: #9ff5a5;
+    height: 100px;
+    
+
+}
+
+.Formulario__livro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.form__login {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 780px;
+}
+
+.form__login li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: black;  
+}
+
+.form__login li:last-child {
+    margin-right: 10px;
+}
+
+
+.form__cadastro {
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    margin: 10px;
+    position: fixed;
+    width: 85%;
+    padding: 40px;
+    z-index: 1;
+    
+}
+
+
+
+.form__cadastro .nome__livro {
+    text-align: center;
+    margin: 0px;
+    display: block;
+    text-align: center;    
+    justify-content: space-between;
+    flex-direction: column;
+    height: 30px;
+    padding-inline: inherit;
+  
+}
+
+.form__cadastro .titulo__livro {
+    text-align: center;
+    margin: 0px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    
+}
+
+
+.form__cadastro .autor__livro {
+    text-align: center;
+    margin: 1px;
+    height: 30px;
+    display: block;
+    
+    
+    
+    
+}
+
+.form__cadastro .ano__livro {
+    text-align: center;
+    margin: 5px;
+    height: 50px;
+    display: block;
+    
+    
+}
+
+.button__upload {
+    max-width: 454px;
+    margin-block: 5px;
+    margin: 0px;
+    margin-bottom: inherit;
+    margin-inline: 667px;      
+   
+}
+
+.button__upload::placeholder {
+    color: black;
+
+    gap: 8px;
+}

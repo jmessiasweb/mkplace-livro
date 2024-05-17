@@ -45,43 +45,39 @@ function Formulario() {
 
   return (
     <div>
-      <header className="menu-principal">
+      <header className="menu-formulario">
+        <ul className="inicio__form">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/LoginUser">Login Usuario</a></li>
+          <li><a href="/LivrosUsados">Cadastro de livros</a></li>
+        </ul>
       </header>
-      <main className="coluna-100 menu-urls">
-        <div className="header-2">
-          <div className="menu">
-            <ul>
-              <li><a href="/">Inicio</a></li>
-              <li><a href="Livros Usados">Livros Usados</a></li>
-              <li><a href="Barato">Cadastro de livros</a></li>
-              <li><a href="QueroRevender">Quero Revender</a></li>
-            </ul>
-          </div>
-          <section className="formulario">
-            <div className="interface"></div>
-            <h2 className="titulo">Dados<span> Cadastrais</span></h2>
-            <form action="">
-              <input type="text" name="" id="" placeholder="Seu Nome Completo:" required />
-              <input type="text" name="" id="" placeholder="Seu Email" required />
-              <input type="text" name="" id="" placeholder="(11)99999-9999" required />
-              <select className="cidades" value={estadoSelecionado} onChange={handleEstadoChange}>
-                <option value="">Selecione o estado</option>
-                {estados.map(estado => (
-                  <option key={estado.value} value={estado.value}>{estado.label}</option>
-                ))}
-              </select>
-              <select className="cidades">
-                <option value="">Selecione a cidade</option>
-                {cidades.map(cidade => (
-                  <option key={cidade.value} value={cidade.value}>{cidade.label}</option>
-                ))}
-              </select>
-              <textarea name="" id="" placeholder="Sua Mensagem" required></textarea>
-              <div className="btn-enviar"><input type="submit" value="Enviar" /></div>
-            </form>
-          </section>
-        </div>
-      </main>
+
+      <section className="formulario">
+        <div className="interface"></div>
+        <h2 className="titulo">Dados<span> Cadastrais</span></h2>
+        <form action="">
+          <input type="text" name="" id="" placeholder="Seu Nome Completo:" required />
+          <input type="text" name="" id="" placeholder="Seu Email" required />
+          <input type="text" name="" id="" placeholder="(11)99999-9999" required />
+          <select className="cidades" value={estadoSelecionado} onChange={handleEstadoChange}>
+            <option value="">Selecione o estado</option>
+            {estados.map(estado => (
+              <option key={estado.value} value={estado.value}>{estado.label}</option>
+            ))}
+          </select>
+          <select className="cidades">
+            <option value="">Selecione a cidade</option>
+            {cidades.map(cidade => (
+              <option key={cidade.value} value={cidade.value}>{cidade.label}</option>
+            ))}
+          </select>
+          <textarea name="" id="" placeholder="Sua Mensagem" required></textarea>
+          <div className="btn-enviar"><input type="submit" value="Enviar" /></div>
+        </form>
+      </section>
+
+
       <footer>
         <div className="footer">
           <h3>Todos os direitos reservados &copy;2024</h3>

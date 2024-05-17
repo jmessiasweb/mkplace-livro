@@ -5,6 +5,8 @@ import Provider from './context/Provider';
 import Cart from './components/Cart/Cart';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Formulario from './components/Formulario/Formulario';
+import LoginUser from './components/LoginUser/LoginUser';
+import UploadLivros from './components/UploadLivros/UploadLivros';
 
 
 function App({ children }) {
@@ -23,6 +25,8 @@ function App({ children }) {
             <Routes>
                 <Route path="/" exact element={<Provider > <Header /><Products /> <Cart /></Provider>}/>
                 <Route path="/Formulario" element={<Formulario/>}/>
+                <Route path="/LoginUser" element={<LoginUser/>}/>
+                <Route path="/LivrosUsados" element={<UploadLivros/>}/>
             </Routes>
         </BrowserRouter>
     </>
